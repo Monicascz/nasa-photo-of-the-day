@@ -13,4 +13,5 @@ export default function NasaTitle(props) {
 }
 
 const Background= styled.div`
-    background-color: gray;`
+    background-color: red;
+    `
