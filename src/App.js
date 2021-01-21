@@ -3,6 +3,7 @@ import "./App.css";
 import axios from 'axios'
 import { BASE_URL, API_KEY } from './constants/index' 
 import NasaTitle from './NasaTitle'
+import styled from 'styled-components'
 function App() {
  const [state, setState] = useState('')
  
@@ -17,11 +18,14 @@ useEffect(()=>{
 },[])
 
   return (
-    <div className="App">
+    <Background className="App">
         <NasaTitle state={state}/>
       
-    </div>
+    </Background>
   );
 }
 
 export default App;
+
+const Background = styled.div`
+background-color:red;`

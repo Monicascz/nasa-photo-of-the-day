@@ -1,12 +1,16 @@
 import React from 'react'
 import NasaPhoto from './NasaPhoto'
+import styled from 'styled-components'
 export default function NasaTitle(props) {
     const { state } = props
 
     return (
-        <div>
+        <Background>
             <h1>{state.title}</h1>
             <NasaPhoto state={state}/>        
-        </div>
+        </Background>
     )
 }
+
+const Background= styled.div`
+    background-color: gray;`
